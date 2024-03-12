@@ -15,6 +15,7 @@
 	<description>Demonstração de padrões de projetos implementados com Spring Framework</description>
 	<properties>
 		<java.version>17</java.version>
+		<openapi.version>2.0.2</openapi.version>
 		<spring-cloud.version>2023.0.0</spring-cloud.version>
 	</properties>
 	<dependencies>
@@ -29,6 +30,13 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+
+		<!-- OpenAPI/Swagger (adicionado manualmente) -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>${openapi.version}</version>
 		</dependency>
 
 		<dependency>
